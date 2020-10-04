@@ -1,3 +1,4 @@
+package LinkedList;
 public class MyLinkedList<E> {
 
 
@@ -23,7 +24,7 @@ public class MyLinkedList<E> {
 		temp.next = toAdd;
 	}
 
-	void print() {
+	public void print() {
 		Node<E> temp = head;
 		while (temp != null) {
 			System.out.print(temp.data + " ");
@@ -84,7 +85,7 @@ public class MyLinkedList<E> {
                 return false;   //data not found 
     } 
 
-	void deleteList() 
+	public void deleteList() 
     { 
         head = null; 
 		System.out.println(" list deleted ");

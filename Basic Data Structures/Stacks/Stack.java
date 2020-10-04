@@ -1,4 +1,4 @@
-
+package Stacks;
 import java.util.Scanner;  
 class Stack   
 {  

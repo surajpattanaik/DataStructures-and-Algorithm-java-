@@ -1,4 +1,4 @@
-
+package lists;
 public class Pair<X, Y> {
 
 	X x;

@@ -1,3 +1,4 @@
+package Stacks;
 import java.util.Scanner;  
 public class Stack_Operations {  
 public static void main(String[] args) {  
