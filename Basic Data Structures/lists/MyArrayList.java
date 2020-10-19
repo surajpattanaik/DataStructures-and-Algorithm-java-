@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class MyArrayList extends ArrayList {
 
-	static ArrayList<Object> fruits = new MyArrayList();
+	static ArrayList<Object> al = new MyArrayList();
 
 	public static void main(String[] args) {
 
@@ -25,25 +25,25 @@ public class MyArrayList extends ArrayList {
 		
 
 		System.out.println();
-		for (Object o : fruits) {
+		for (Object o : al) {
 			System.out.print(" " + o);
 		}
 
-		((MyArrayList) fruits).deleteDuplicates();
+		((MyArrayList) al).deleteDuplicates();
 
 		System.out.println();
-		for (Object o : fruits) {
+		for (Object o : al) {
 			System.out.print(" " + o);
 		}
 	}
 
 	// method to delete all duplicate values from ArrayList
 	public void deleteDuplicates() {
-		for (int i = 0; i < fruits.size(); i++) {
-			for (int j = i + 1; j < fruits.size(); j++) {
+		for (int i = 0; i < al.size(); i++) {
+			for (int j = i + 1; j < al.size(); j++) {
 
-				if (fruits.get(i).equals(fruits.get(j))) {
-					fruits.remove(j);
+				if (al.get(i).equals(al.get(j))) {
+					al.remove(j);
 
 				}
 			}
@@ -54,7 +54,7 @@ public class MyArrayList extends ArrayList {
 	 * 
 	 * @Override 
 	 * public boolean add(Object e) {
-	 * if (!fruits.contains(e)) { return super.add(e); } else { return false; }
+	 * if (!al.contains(e)) { return super.add(e); } else { return false; }
 	 * 
 	 * 
 	 * }
